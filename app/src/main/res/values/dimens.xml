@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin_all"> 10dp </dimen>
+    <dimen name="imgv_dog_width_and_height"> 200dp </dimen>
+    <dimen name="imgv_bone_width_and_height"> 40dp </dimen>
+    <dimen name="layout_margin_icons"> 5dp </dimen>
+    <dimen name="pet_name_size">20dp</dimen>
+
+    <dimen name="elevacion_action_bar">4dp</dimen>
+</resources>

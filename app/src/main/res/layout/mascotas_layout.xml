@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cv_cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardBackgroundColor="#D7D7D8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_margin_all"
+        android:background="#B4B4B8"
+        >
+
+        <ImageView
+            android:id="@+id/imgv_dog"
+            android:layout_width="@dimen/imgv_dog_width_and_height"
+            android:layout_height="@dimen/imgv_dog_width_and_height"
+            android:src="@drawable/perro_1"
+            android:scaleType="fitStart"
+            android:layout_margin="@dimen/layout_margin_all"
+            android:layout_centerHorizontal="true"
+            >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgv_dog"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/imgv_bone"
+                android:layout_width="@dimen/imgv_bone_width_and_height"
+                android:layout_height="@dimen/imgv_bone_width_and_height"
+                android:src="@drawable/bone_1"
+                android:layout_margin="@dimen/layout_margin_icons"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_dog_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ragnarok"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/layout_margin_icons"
+                android:textSize="@dimen/pet_name_size"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_likes_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/pet_name_size"
+            android:text="5"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_margin="@dimen/layout_margin_icons"
+            android:layout_toLeftOf="@+id/imgv_bone_like"
+            android:layout_alignBottom="@id/linear_layout_1"
+            />
+
+        <ImageView
+            android:id="@+id/imgv_bone_like"
+            android:layout_width="@dimen/imgv_bone_width_and_height"
+            android:layout_height="@dimen/imgv_bone_width_and_height"
+            android:src="@drawable/bone_2"
+            android:layout_margin="@dimen/layout_margin_icons"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/linear_layout_1"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
